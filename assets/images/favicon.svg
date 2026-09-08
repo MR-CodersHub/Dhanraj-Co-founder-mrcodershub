@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12141A" />
+      <stop offset="100%" stop-color="#08090C" />
+    </linearGradient>
+
+    <!-- Royal Blue Accent Gradient -->
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.5" />
+      <stop offset="40%" stop-color="#232A3B" />
+      <stop offset="100%" stop-color="#151822" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="sparkGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="16" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle Container -->
+  <rect x="24" y="24" width="464" height="464" rx="110" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="10" />
+
+  <!-- Ambient blue radial glow top right -->
+  <circle cx="382" cy="120" r="42" fill="#2563EB" opacity="0.35" filter="url(#sparkGlow)" />
+
+  <!-- Monogram Letter D -->
+  <text x="238" y="360" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+        font-size="310" 
+        font-weight="800" 
+        text-anchor="middle" 
+        fill="#FFFFFF">D</text>
+
+  <!-- Dynamic Tech Accent Spark -->
+  <circle cx="382" cy="120" r="28" fill="url(#blueAccent)" stroke="#60A5FA" stroke-width="4" />
+  <circle cx="382" cy="120" r="11" fill="#FFFFFF" />
+</svg>
